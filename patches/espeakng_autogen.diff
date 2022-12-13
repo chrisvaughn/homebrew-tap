@@ -1,0 +1,11 @@
+--- autogen.sh	2022-04-02 14:24:41
++++ autogen.sh	2022-12-13 10:38:11
+@@ -8,6 +8,8 @@
+
+ mkdir -p m4
+ touch AUTHORS
++mv CHANGELOG.md _ChangeLog.md
++mv _ChangeLog.md ChangeLog.md
+ ln -sf CHANGELOG.md NEWS
+ ln -sf README.md README
+
