@@ -1,0 +1,11 @@
+--- autogen.sh	2021-08-18 03:03:58
++++ my_autogen.sh	2022-12-13 09:24:12
+@@ -8,6 +8,8 @@
+ 
+ mkdir -p m4
+ ln -sf README.md README
++mv CHANGELOG.md _ChangeLog.md
++mv _ChangeLog.md ChangeLog.md
+ ln -sf CHANGELOG.md NEWS
+ 
+ aclocal -I m4 || exit 1
